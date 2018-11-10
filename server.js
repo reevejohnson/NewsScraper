@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
 
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/beyonceDB'
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://heroku_bfjvlp5j:r1ficksjcddlv24rrdm1edl7b7@ds127044.mlab.com:27044/heroku_bfjvlp5j'
 mongoose.connect(MONGODB_URI);
 
 app.get('/scrape', (req, res) => {
